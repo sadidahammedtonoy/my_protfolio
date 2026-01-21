@@ -1,1 +1,387 @@
+<!DOCTYPE html>
 
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sadid</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#0a0c12",
+                        "card-dark": "#161b26",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .neon-glow {
+            box-shadow: 0 0 15px rgba(19, 91, 236, 0.4);
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            background-color: rgba(10, 12, 18, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 glass-nav border-b border-white/5">
+<div class="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<h2 class="text-xl font-black tracking-tight">Sadid Ahammed</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#projects">Projects</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#experience">Experience</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#skills">Skills</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#contact"><button class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all neon-glow">
+                Get in Touch
+            </button></a>
+</nav>
+</div>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="max-w-[1200px] mx-auto px-6 py-12 md:py-24">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 w-fit">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="text-xs font-bold text-primary tracking-wider uppercase">Available for Projects</span>
+</div>
+<div class="space-y-4">
+<h1 class="text-5xl md:text-7xl font-black leading-tight tracking-tighter">
+                            Building <span class="text-primary">Next-Gen</span> Mobile Experiences
+                        </h1>
+<p class="text-lg text-slate-400 max-w-lg leading-relaxed">
+                            Flutter Developer focused on building high-performance, scalable Flutter applications with clean architecture and great UX.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-4">
+<a class="flex h-12 items-center justify-center px-8 bg-primary text-white rounded-lg font-bold hover:scale-105 transition-transform neon-glow" href="#projects">
+                            View Work
+                        </a>
+<a
+  href="PROFESSIONAL_SADID_AHAMMED.pdf"
+  download
+  class="flex h-12 items-center justify-center px-8 bg-white/5 border border-white/10 hover:bg-white/10 rounded-lg font-bold transition-colors"
+>
+  Download CV
+</a>
+
+</div>
+</div>
+
+
+
+<div class="relative">
+<div class="absolute inset-0 bg-primary/20 blur-[100px] rounded-full"></div>
+<div class="relative w-full aspect-[4/3] bg-card-dark rounded-2xl border border-white/10 overflow-hidden shadow-2xl shadow-primary/10">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
+<img src="mockup.png" alt="App Mockup" class="w-full h-full object-cover" />
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Expertise / Skills Ribbon -->
+<section class="border-y border-white/5 bg-white/5 py-10" id="skills">
+<div class="max-w-[1200px] mx-auto px-6">
+<p class="text-center text-xs font-bold uppercase tracking-[0.3em] text-slate-500 mb-8">Technical Arsenal</p>
+<div class="flex flex-wrap justify-center gap-4">
+<div class="flex h-10 items-center gap-2 rounded-lg bg-card-dark border border-white/5 px-4">
+  <span class="material-symbols-outlined text-primary">code</span>
+  <span class="text-sm font-medium">Dart</span>
+</div>
+
+<div class="flex h-10 items-center gap-2 rounded-lg bg-card-dark border border-white/5 px-4">
+  <span class="material-symbols-outlined text-primary">terminal</span>
+  <span class="text-sm font-medium">Python</span>
+</div>
+<div class="flex h-10 items-center gap-2 rounded-lg bg-card-dark border border-white/5 px-4">
+  <span class="material-symbols-outlined text-primary">hub</span>
+  <span class="text-sm font-medium">GetX</span>
+</div>
+
+<div class="flex h-10 items-center gap-2 rounded-lg bg-card-dark border border-white/5 px-4">
+  <span class="material-symbols-outlined text-primary">layers</span>
+  <span class="text-sm font-medium">Provider</span>
+</div>
+
+<div class="flex h-10 items-center gap-2 rounded-lg bg-card-dark border border-white/5 px-4">
+  <span class="material-symbols-outlined text-primary">save</span>
+  <span class="text-sm font-medium">Shared Preferences</span>
+</div>
+<div class="flex h-10 items-center gap-2 rounded-lg bg-card-dark border border-white/5 px-4">
+  <span class="material-symbols-outlined text-primary">cloud</span>
+  <span class="text-sm font-medium">REST APIs</span>
+</div>
+<div class="flex h-10 items-center gap-2 rounded-lg bg-card-dark border border-white/5 px-4">
+  <span class="material-symbols-outlined text-primary">account_tree</span>
+  <span class="text-sm font-medium">Clean Architecture</span>
+</div>
+
+<div class="flex h-10 items-center gap-2 rounded-lg bg-card-dark border border-white/5 px-4">
+  <span class="material-symbols-outlined text-primary">layers_clear</span>
+  <span class="text-sm font-medium">MVC</span>
+</div>
+<div class="flex h-10 items-center gap-2 rounded-lg bg-card-dark border border-white/5 px-4">
+  <span class="material-symbols-outlined text-primary">phone_iphone</span>
+  <span class="text-sm font-medium">iOS & Android</span>
+</div>
+<div class="flex h-10 items-center gap-2 rounded-lg bg-card-dark border border-white/5 px-4">
+<span class="material-symbols-outlined text-primary">flutter</span>
+<span class="text-sm font-medium">Flutter</span>
+</div>
+<div class="flex h-10 items-center gap-2 rounded-lg bg-card-dark border border-white/5 px-4">
+<span class="material-symbols-outlined text-primary">cloud</span>
+<span class="text-sm font-medium">Firebase</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects -->
+<section class="max-w-[1200px] mx-auto px-6 py-20" id="projects">
+<div class="flex items-end justify-between mb-12">
+<div class="space-y-2">
+<h2 class="text-3xl font-black">Featured Projects</h2>
+<p class="text-slate-400">Selected work from recent production releases.</p>
+</div>
+<a class="text-primary text-sm font-bold flex items-center gap-1 hover:underline" href="#">
+                    View all archives
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="group bg-card-dark border border-white/5 rounded-xl overflow-hidden hover:border-primary/50 transition-all">
+<div class="aspect-video relative overflow-hidden">
+<img
+  src="docuGuild.png"
+  alt="Project One"
+  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white text-primary px-4 py-2 rounded-lg font-bold text-sm shadow-xl">View Details</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex gap-2 mb-4">
+<span class="text-[10px] font-black uppercase tracking-widest bg-primary/20 text-primary px-2 py-0.5 rounded">Firebase</span>
+<span class="text-[10px] font-black uppercase tracking-widest bg-primary/20 text-primary px-2 py-0.5 rounded">Flutter</span>
+<span class="text-[10px] font-black uppercase tracking-widest bg-primary/20 text-primary px-2 py-0.5 rounded">Node.js</span>
+<span class="text-[10px] font-black uppercase tracking-widest bg-primary/20 text-primary px-2 py-0.5 rounded">Face++</span>
+</div>
+<h3 class="text-xl font-bold mb-2">DocuGuild</h3>
+<p class="text-sm text-slate-400 mb-6 leading-relaxed">
+                            An AI powered document scanning and management app with OCR and face recognition features.
+                        </p>
+<div class="flex items-center gap-4 text-slate-500">
+<span class="material-symbols-outlined text-[20px] cursor-pointer hover:text-white transition-colors">link</span>
+<span class="material-symbols-outlined text-[20px] cursor-pointer hover:text-white transition-colors">code</span>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group bg-card-dark border border-white/5 rounded-xl overflow-hidden hover:border-primary/50 transition-all">
+<div class="aspect-video relative overflow-hidden">
+<img alt="Project Two" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sleek e-commerce mobile application showcase" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs_YBlZEwET3jLO-RHzdHf4m-xjjrd2AvEcZgsi7Qb8sRFBXVQz5IBaABhOgxfSircRcQxFLgnRdlnbC-NDyWT53Hid26UfWExgBciAe8M-WYd4BJZU9UVMigEPJaKdVZM34FUYMqtWDCDJ0NxcOrcIJkQhyOxp4WiJfjAKVUrBVOWnn_gFznuMMQ6Gt0Pf-aASvV2au-epC_jsBmb7CmT9d81v56ikV99lZf6fxE4vKA2kIChmlrCgM2Dj1rq8_Uj3eUEWJoCqcc"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white text-primary px-4 py-2 rounded-lg font-bold text-sm shadow-xl">View Case Study</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex gap-2 mb-4">
+<span class="text-[10px] font-black uppercase tracking-widest bg-primary/20 text-primary px-2 py-0.5 rounded">Kotlin</span>
+<span class="text-[10px] font-black uppercase tracking-widest bg-primary/20 text-primary px-2 py-0.5 rounded">Compose</span>
+</div>
+<h3 class="text-xl font-bold mb-2">NexStore Pay</h3>
+<p class="text-sm text-slate-400 mb-6 leading-relaxed">
+                            Encrypted digital wallet and NFC payment solution built for the global Android market.
+                        </p>
+<div class="flex items-center gap-4 text-slate-500">
+<span class="material-symbols-outlined text-[20px] cursor-pointer hover:text-white transition-colors">link</span>
+<span class="material-symbols-outlined text-[20px] cursor-pointer hover:text-white transition-colors">code</span>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group bg-card-dark border border-white/5 rounded-xl overflow-hidden hover:border-primary/50 transition-all">
+<div class="aspect-video relative overflow-hidden">
+<img alt="Project Three" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Interactive productivity dashboard mobile app" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzHn276Dh5m19evtwvcpXo8hc7vvabDmyHhaeA0lIl_tVv1lvS1aY1W9P2BTiAv560TxtlLNMZjciCdYcce2X7Ir4_nbDoqeuml5MVs8-A8eKQOApKP_eRQfN7yvCQhRAlI_TRH4IqxrVgDfh5PcMqy27ivmRxYgiyHBddAhF5WJHNe6QhXSyPXl9uTVXICkCDtbbPQ63ob22Um77bbv7s8IeFMEEHlYcu0sVXo93ugCNlBDK6ja6SpzJRfcL6mO1gb4_C9HX0s50"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white text-primary px-4 py-2 rounded-lg font-bold text-sm shadow-xl">View Case Study</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex gap-2 mb-4">
+<span class="text-[10px] font-black uppercase tracking-widest bg-primary/20 text-primary px-2 py-0.5 rounded">Flutter</span>
+<span class="text-[10px] font-black uppercase tracking-widest bg-primary/20 text-primary px-2 py-0.5 rounded">Firebase</span>
+</div>
+<h3 class="text-xl font-bold mb-2">ZenSpace</h3>
+<p class="text-sm text-slate-400 mb-6 leading-relaxed">
+                            Cross-platform meditation and focus application with cloud-sync and offline capabilities.
+                        </p>
+<div class="flex items-center gap-4 text-slate-500">
+<span class="material-symbols-outlined text-[20px] cursor-pointer hover:text-white transition-colors">link</span>
+<span class="material-symbols-outlined text-[20px] cursor-pointer hover:text-white transition-colors">code</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Snippet -->
+<section class="bg-white/5 py-20" id="experience">
+  <div class="max-w-[1200px] mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <!-- Left -->
+      <div class="lg:col-span-1">
+        <h2 class="text-3xl font-black mb-4">Experience</h2>
+        <p class="text-slate-400 leading-relaxed">
+          I build production-ready Flutter apps with clean architecture, smooth UI, and scalable codebases —
+          from early-stage MVPs to full-featured applications.
+        </p>
+      </div>
+
+      <!-- Right -->
+      <div class="lg:col-span-2 space-y-8">
+        <!-- Job -->
+        <div class="flex gap-6 border-l-2 border-primary/30 pl-6 pb-8 relative">
+          <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary border-4 border-background-dark"></div>
+
+          <div class="space-y-1">
+            <span class="text-xs font-black text-primary uppercase">2025 — Present</span>
+            <h4 class="text-lg font-bold">Flutter Developer @ SM Technology</h4>
+            <p class="text-sm text-slate-400">
+              Building and maintaining cross-platform mobile apps using Flutter &amp; Dart. Implemented GetX state
+              management, REST API integrations, Firebase features (Auth, FCM), and local storage.
+              Focused on performance optimization, reusable UI components, and clean architecture.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-1">
+  <h2 class="text-3xl font-black mb-4">Learning</h2>
+  <p class="text-slate-400 leading-relaxed">
+    Focused on building practical Flutter skills through structured learning and hands-on projects,
+    emphasizing clean code, responsive UI, and real-world application patterns.
+  </p>
+</div>
+
+<!-- Learning Item -->
+<div class="flex gap-6 border-l-2 border-primary/30 pl-6 pb-8 relative">
+  <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary border-4 border-background-dark"></div>
+
+  <div class="space-y-1">
+    <span class="text-xs font-black text-primary uppercase">2025</span>
+    <h4 class="text-lg font-bold">Flutter Training &amp; Projects @ Ostad</h4>
+    <p class="text-sm text-slate-400">
+      Completed structured Flutter training with hands-on projects, focusing on Dart fundamentals,
+      responsive UI development, navigation, state management (GetX), REST API integration,
+      authentication flows, and basic deployment. Built multiple practice apps and reusable
+      components to strengthen real-world development skills.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section class="max-w-[1200px] mx-auto px-6 py-24 text-center" id="contact">
+  <div class="max-w-2xl mx-auto space-y-8">
+
+    <h2 class="text-4xl md:text-5xl font-black tracking-tight">
+      Ready to build something
+      <span class="text-primary underline decoration-2 underline-offset-8">amazing</span>?
+    </h2>
+
+    <p class="text-slate-400 text-lg">
+      I'm currently accepting new projects and consulting engagements.
+      Let's discuss how we can bring your vision to life.
+    </p>
+
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+
+      <!-- Email Button -->
+      <a
+        class="flex h-14 items-center justify-center px-10 bg-primary text-white rounded-xl font-bold hover:scale-105 transition-transform neon-glow"
+        href="mailto:sadidahammedtonoy@gmail.com"
+      >
+        sadidahammedtonoy@gmail.com
+      </a>
+
+      <!-- WhatsApp Call Button (Icon Only) -->
+      <a
+        href="tel:+8801878492887"
+        class="flex h-14 w-14 items-center justify-center rounded-xl border border-white/10 hover:text-primary hover:scale-105 transition"
+        aria-label="Call via WhatsApp"
+      >
+        <!-- WhatsApp SVG Icon -->
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+          <path d="M12.04 2C6.57 2 2.13 6.29 2.13 11.58c0 1.95.57 3.86 1.65 5.49L2 22l5.13-1.61c1.55.84 3.3 1.29 5.09 1.29h.01c5.47 0 9.91-4.29 9.91-9.58C22.14 6.29 17.7 2 12.04 2zm0 17.3c-1.57 0-3.1-.43-4.42-1.25l-.32-.19-3.04.96.99-2.89-.21-.3c-1.03-1.43-1.58-3.12-1.58-4.89 0-4.58 3.85-8.31 8.58-8.31 4.73 0 8.58 3.73 8.58 8.31 0 4.58-3.85 8.31-8.58 8.31zm4.78-6.22c-.26-.13-1.55-.76-1.79-.85-.24-.09-.42-.13-.6.13-.18.26-.69.85-.85 1.02-.16.17-.32.2-.58.07-.26-.13-1.11-.4-2.11-1.29-.78-.69-1.31-1.54-1.46-1.8-.15-.26-.02-.4.11-.53.11-.11.26-.28.39-.42.13-.15.18-.26.26-.42.09-.17.04-.32-.02-.45-.06-.13-.6-1.43-.82-1.96-.22-.53-.44-.46-.6-.47-.16-.01-.34-.01-.52-.01-.18 0-.45.07-.69.32-.24.26-.91.89-.91 2.17 0 1.28.93 2.52 1.06 2.69.13.17 1.83 2.86 4.44 4.01.62.27 1.1.43 1.48.55.62.19 1.18.16 1.62.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.17-.5-.3z"/>
+        </svg>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+</main>
+<!-- Footer -->
+<footer class="border-t border-white/5 py-12 bg-card-dark/30">
+<div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-3">
+<div class="size-6 bg-primary rounded-md flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[14px]">person</span>
+</div>
+<span class="text-sm font-bold">Sadid Software Developer © 2025</span>
+</div>
+<div class="flex gap-8 text-xs font-medium text-slate-500 uppercase tracking-widest">
+<a href="https://www.linkedin.com/in/sadid-ahammed-45597a223/" class="flex items-center gap-2 hover:text-primary transition">
+  <span class="material-symbols-outlined text-lg">work</span>
+  <span>LinkedIn</span>
+</a>
+
+<a href="https://github.com/sadidahammedtonoy" class="flex items-center gap-2 hover:text-primary transition">
+  <span class="material-symbols-outlined text-lg">code</span>
+  <span>GitHub</span>
+</a>
+
+
+</footer>
+</body></html>
